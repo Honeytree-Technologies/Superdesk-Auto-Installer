@@ -6,7 +6,7 @@ cat <<start_content
 #                  Created by Honeytree Technologies, LLC              #
 #                            www.honeytreetech.com                     #
 #                                                                      #
-#                      Superdesk: honeytree.social                     #
+#                      Social: honeytree.social                        #
 #                      Email : info@honeytreetech.com                  #
 #                                                                      #
 ########################################################################

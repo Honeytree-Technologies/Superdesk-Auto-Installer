@@ -27,11 +27,10 @@ startup_warning
 
 sleep 3
 
-
 # Function to validate if the port number is within the specified range
 validate_port() {
     local port=$1
-    local excluded_ports=("80" "443" "8080", "9200", "9300" , "27017", "6379")
+    local excluded_ports=("80" "443" "8080" "9200" "9300"  "27017" "6379")
 
     if [[ $port =~ ^[0-9]+$ && $port -ge 0 && $port -le 65536 ]]; then
         for excluded_port in "${excluded_ports[@]}"; do

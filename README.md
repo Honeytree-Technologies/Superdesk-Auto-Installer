@@ -1,6 +1,6 @@
 # Superdesk Auto-Installer Script
 
-This script is designed to automate the initial deployment of Superdesk and its related components using Docker and bash scripting.
+This script is designed to automate the initial deployment of a **production ready** setup of Superdesk and its related components using Docker and bash scripting.
 
 This is a free-to-use Bash script that allows you to easily install Superdesk and enhance its security with a single command. You can utilize this script on a blank server or an existing server, making it suitable for both new and experienced Superdesk server owners.
 
@@ -8,7 +8,8 @@ The script handles the entire Superdesk installation process, including activati
 
 The Bash file is unencrypted, freely usable, and redistributable (though credit to Honeytree Technologies is required).
 
-
+# About Superdesk
+Superdesk is an open source end-to-end news creation, production, curation, distribution and publishing platform developed and maintained by Sourcefabric with the sole purpose of making the best possible software for journalism. It is scaleable to suit news organizations of any size. 
 
 ## About the Script
 

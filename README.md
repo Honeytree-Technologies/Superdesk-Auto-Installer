@@ -1,4 +1,4 @@
-# Superdesk Deployment Script
+# Superdesk Auto-Installer Script
 
 This script is designed to automate the initial deployment of Superdesk and its related components using Docker and bash scripting.
 

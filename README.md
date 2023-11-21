@@ -41,7 +41,7 @@ The Bash file is unencrypted, freely usable, and redistributable (though credit 
     | `admin_user`|Admin username| &checkmark; | &#10006;| &#10006; | 
     | `admin_email`|Admin email| &checkmark; | &#10006;| &#10006; | 
     | `admin_password`|Admin password| &checkmark; | &#10006;| &#10006; | 
-    | `app_name`|Application name| &checkmark; | &#10006;| &#10006; | 
+    | `application_name`|Application name| &checkmark; | &#10006;| &#10006; | 
     |`domain_name` | Domain name| &checkmark;| &#10006;| &#10006;|
     |`smtp_server` | SMTP server | &checkmark;|  &#10006;| &#10006; | 
     |`smtp_port` | SMTP port| &checkmark;| &#10006;| &#10006;|

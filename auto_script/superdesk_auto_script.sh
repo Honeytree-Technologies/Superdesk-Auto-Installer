@@ -30,7 +30,7 @@ sleep 3
 # Function to validate if the port number is within the specified range
 validate_port() {
     local port=$1
-    local excluded_ports=("80" "443" "8080" "9200" "9300"  "27017" "6379")
+    local excluded_ports=("80" "443" "8080")
 
     if [[ $port =~ ^[0-9]+$ && $port -ge 0 && $port -le 65536 ]]; then
         for excluded_port in "${excluded_ports[@]}"; do
@@ -72,8 +72,8 @@ while true; do
 done
 
 while true; do
-  read -p "Enter application name: " app_name
-  if [ -n "$app_name" ]; then
+  read -p "Enter application name: " application_name
+  if [ -n "$application_name" ]; then
     break
   else
     echo "Application name cannot be empty. Please enter application name."
@@ -140,7 +140,7 @@ done
 
 # Prompt the user until a valid port is entered
 while true; do
-  read -p "Enter a port number (1-65535, excluding 80, 443, 8080, 9200, 9300, 27017, 6379): " port
+  read -p "Enter a port number (1-65535, excluding 80, 443, 8080): " port
   # Validate the input
   validate_port "$port"
   case $? in
@@ -247,7 +247,7 @@ docker_content
 
 cat <<docker_env >> ${work_dir}/.env.docker
 
-APPLICATION_NAME=${app_name}
+APPLICATION_NAME=${application_name}
 SUPERDESK_URL=https://${domain_name}/api
 DEMO_DATA=1 # install demo data, set to 0 if you want clean install
 WEB_CONCURRENCY=2
